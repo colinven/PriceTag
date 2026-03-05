@@ -1,7 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import LandingPage from "./pages/LandingPage"
-import FormPage from "./pages/FormPage"
-import QuotePage from "./pages/QuotePage"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import FormPage from "./pages/FormPage";
+import QuotePage from "./pages/QuotePage";
 
 export default function App(){
     return (

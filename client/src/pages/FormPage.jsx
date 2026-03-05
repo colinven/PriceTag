@@ -1,9 +1,14 @@
-import QuoteForm from "../components/QuoteForm"
+import QuoteForm from "../components/quote/QuoteForm";
+import Header from "../components/layout/Header";
 
 function FormPage() {
     return (
-        <QuoteForm />
+        <>
+            <Header />
+            <QuoteForm />
+        </>
+        
     )
 }
 
-export default FormPage
+export default FormPage;
