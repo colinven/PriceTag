@@ -48,7 +48,7 @@ export default function QuoteForm({ onSubmit }) {
           <h2 className="quote-form__title">Get Your Instant Quote</h2>
           <p className="quote-form__subtitle">
             Fill out the form below and we'll calculate a price range for your
-            home in seconds.
+            home in seconds. <strong>We will never share your information.</strong>
           </p>
         </div>
 
@@ -222,6 +222,9 @@ export default function QuoteForm({ onSubmit }) {
               </>
             )}
           </button>
+          <p className="quote-form__subtitle">
+            By submitting, you agree to allow &lt;company&gt; to contact you by phone and email to follow up on your quote request.
+          </p>
 
         </form>
       </div>
