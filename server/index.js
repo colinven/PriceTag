@@ -33,7 +33,7 @@ app.post("/property", (req, res) => {
 
     // response on close/timeout
     lookup.on('close', (code, signal) => {
-        if (signal === 'SIGKILL') {
+        if (signal === 'SIGKILL' || signal === 'SIGTERM') {
             const response = new PropertyResponse(false, null, "Could not retrieve property data");
             res.send(response);
         } else {
