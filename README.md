@@ -7,7 +7,7 @@ An automated house wash quoting tool to be used by exterior cleaning companies. 
 ## How It Works
 
 1. Customer fills out the quote form with their contact info and address
-2. The Express server spawns a Python script that scrapes property data (sq footage, stories, year built) via [HomeHarvest](https://github.com/ZacharyHampton/HomeHarvest)
+2. The Express server spawns a Python script that scrapes property data (sq footage, # of stories, year built) via [HomeHarvest](https://github.com/ZacharyHampton/HomeHarvest)
 3. The pricing service calculates a price range based on the property data
 4. The customer is directed to a results page displaying their quote
 
