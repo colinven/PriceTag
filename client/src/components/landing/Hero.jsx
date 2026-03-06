@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section className="hero">
-
       <div className="hero__content">
-        <div className="hero__badge">
-          <span className="hero__badge-dot" />
+
+        <span className="badge">
+          <span className="badge__dot" />
           Free, Fast House Wash Quotes
-        </div>
+        </span>
 
         <h1 className="hero__title">
           Your Home's Price,
@@ -24,7 +24,7 @@ export default function Hero() {
         </p>
 
         <div className="hero__actions">
-          <Link to="/get-a-quote" className="hero__cta-primary">
+          <Link to="/get-a-quote" className="app-btn app-btn--primary">
             Get My Free Quote
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7" />
@@ -42,12 +42,11 @@ export default function Hero() {
             <span className="hero__stat-value">100%</span>
             <span className="hero__stat-label">Free, no obligation</span>
           </div>
-          
         </div>
       </div>
 
       <div className="hero__visual" aria-hidden="true">
-        <div className="hero__card">
+        <div className="hero__card glass-card">
           <div className="hero__card-header">
             <span className="hero__card-dot hero__card-dot--red" />
             <span className="hero__card-dot hero__card-dot--yellow" />
@@ -74,7 +73,6 @@ export default function Hero() {
             <div className="hero__card-divider" />
             <div className="hero__card-price-label">Estimated Range</div>
             <div className="hero__card-price">$245 — $315</div>
-            
           </div>
         </div>
       </div>

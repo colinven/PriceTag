@@ -19,18 +19,11 @@
     margin: 0 auto;
   }
 
-  &__brand {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    text-decoration: none;
-  }
-
   &__brand-name {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
-    color: #FFFFFF;
+    color: $text-light;
     letter-spacing: -0.01em;
   }
 
@@ -41,24 +34,18 @@
   }
 
   &__nav-link {
-    font-family: 'DM Sans', sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
     color: rgba(#F0F4F8, 0.6);
-    text-decoration: none;
     transition: color 0.2s ease;
 
-    &:hover {
-      color: #FFFFFF;
-    }
+    &:hover { color: $text-light; }
   }
 
   &__nav-cta {
-    font-family: 'DM Sans', sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
-    color: #FFFFFF;
-    text-decoration: none;
+    color: $text-light;
     background: $primary;
     padding: 0.5rem 1.1rem;
     border-radius: $radius;
