@@ -1,3 +1,5 @@
-export default function pricingService() {
+function pricingService() {
     
 }
+
+module.exports = pricingService;
