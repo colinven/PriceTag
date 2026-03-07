@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Property Lookup Script
-Pulls square footage, # of stories, year built using homeharvest
+Pulls sqft, year built, # of stories, garage size, property type, latitude, longitude
 """
 
 import json, sys, pandas
@@ -33,11 +33,19 @@ def main():
     sqft = result.get("sqft")
     year_built = result.get("year_built")
     stories = result.get("stories")
+    garage = result.get("parking_garage")
+    property_type = result.get("style")
+    latitude = result.get("latitude")
+    longitude = result.get("longitude")
 
     sys.stdout.write(json.dumps({
-        "sqft": int(sqft) if not pandas.isna(sqft) else None, 
-        "year_built": int(year_built) if not pandas.isna(year_built) else None, 
-        "stories": int(stories) if not pandas.isna(stories) else None
+        "sqft": None if pandas.isna(sqft) else int(sqft), 
+        "year_built": None if pandas.isna(year_built) else int(year_built), 
+        "stories": None if pandas.isna(stories) else int(stories),
+        "garage": garage or None,
+        "property_type": property_type or None,
+        "latitude": latitude or None,
+        "longitude": longitude or None
         }))
 
 if __name__ == "__main__":
