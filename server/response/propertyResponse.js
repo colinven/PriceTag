@@ -15,7 +15,7 @@ class PropertyResponse {
     }
 
     message(messageString) {
-        this.message = msg;
+        this.message = messageString;
     }
 
     price(priceArray) {
